@@ -126,3 +126,37 @@ hr {
     border-radius: 15px;
     color: #FF4A60;
 }
+
+/*-----------------------*\
+        Media Query
+\*-----------------------*/
+
+/*Mobile Devices*/
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 80%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: 1fr;
+    }
+    .player, .blog, .course {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Tablet Devices*/
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 80%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: 1fr 1fr;
+    }
+    .player, .blog, .course {
+        flex-direction: column;
+        align-items: center;
+    }
+}
